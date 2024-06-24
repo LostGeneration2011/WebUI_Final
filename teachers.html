@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giáo Viên - Yoga Online</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="teachers-page">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Yoga Online</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="coursesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Khóa Học
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+                            <li><a class="dropdown-item" href="all-courses.html#courses-basic">Cơ Bản</a></li>
+                            <li><a class="dropdown-item" href="all-courses.html#courses-intermediate">Trung Cấp</a></li>
+                            <li><a class="dropdown-item" href="all-courses.html#courses-advanced">Nâng Cao</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="teachers.html">Giáo Viên</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Teachers Section -->
+    <section id="teachers" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Giáo Viên</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card instructor-card" data-bs-toggle="modal" data-bs-target="#teacherModal1">
+                        <img src="img/profile.jpg" class="rounded-circle mb-3 instructor-img" alt="Giáo Viên 1">
+                        <div class="card-body">
+                            <h5>Nguyễn Thị C</h5>
+                            <p>Với hơn 10 năm kinh nghiệm, Nguyễn Thị C là chuyên gia yoga được nhiều người yêu mến.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card instructor-card" data-bs-toggle="modal" data-bs-target="#teacherModal2">
+                        <img src="img/profile-1.png" class="rounded-circle mb-3 instructor-img" alt="Giáo Viên 2">
+                        <div class="card-body">
+                            <h5>Trần Văn D</h5>
+                            <p>Trần Văn D là người hướng dẫn yoga trung cấp và nâng cao, chuyên về các kỹ thuật thở và thiền.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card instructor-card" data-bs-toggle="modal" data-bs-target="#teacherModal3">
+                        <img src="img/profile-2.jpg" class="rounded-circle mb-3 instructor-img" alt="Giáo Viên 3">
+                        <div class="card-body">
+                            <h5>Phạm Thị E</h5>
+                            <p>Phạm Thị E tập trung vào việc giảng dạy yoga cho trẻ em và người lớn tuổi, giúp họ cải thiện sức khỏe và sự linh hoạt.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more instructors here as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals for each teacher -->
+    <!-- Modal 1 -->
+    <div class="modal fade" id="teacherModal1" tabindex="-1" aria-labelledby="teacherModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="teacherModalLabel1">Nguyễn Thị C</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="img/profile.jpg" class="img-fluid rounded-circle mb-3" alt="Giáo Viên 1">
+                        </div>
+                        <div class="col-md-8">
+                            <h5>Thông tin cá nhân</h5>
+                            <p>Nguyễn Thị C đã có hơn 10 năm kinh nghiệm trong lĩnh vực yoga và là một chuyên gia được nhiều người yêu mến. Cô ấy chuyên về các kỹ thuật yoga truyền thống và hiện đại.</p>
+                            <h5>Kinh nghiệm</h5>
+                            <p>Cô ấy đã dạy yoga tại nhiều trung tâm lớn và có kinh nghiệm làm việc với nhiều nhóm học viên khác nhau.</p>
+                            <h5>Đánh giá</h5>
+                            <p>⭐⭐⭐⭐⭐ (5/5)</p>
+                            <p>Các học viên thường xuyên khen ngợi sự tận tâm và kiến thức sâu rộng của cô ấy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="teacherModal2" tabindex="-1" aria-labelledby="teacherModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="teacherModalLabel2">Trần Văn D</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="img/profile-1.png" class="img-fluid rounded-circle mb-3" alt="Giáo Viên 2">
+                        </div>
+                        <div class="col-md-8">
+                            <h5>Thông tin cá nhân</h5>
+                            <p>Trần Văn D là người hướng dẫn yoga trung cấp và nâng cao, chuyên về các kỹ thuật thở và thiền. Anh ấy có hơn 8 năm kinh nghiệm trong lĩnh vực này.</p>
+                            <h5>Kinh nghiệm</h5>
+                            <p>Anh ấy đã làm việc với nhiều trung tâm yoga và có kỹ năng đặc biệt trong việc giúp học viên nâng cao kỹ năng và sức mạnh của họ.</p>
+                            <h5>Đánh giá</h5>
+                            <p>⭐⭐⭐⭐⭐ (5/5)</p>
+                            <p>Học viên rất hài lòng với phong cách giảng dạy và sự nhiệt tình của anh ấy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="teacherModal3" tabindex="-1" aria-labelledby="teacherModalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="teacherModalLabel3">Phạm Thị E</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="img/profile-2.jpg" class="img-fluid rounded-circle mb-3" alt="Giáo Viên 3">
+                        </div>
+                        <div class="col-md-8">
+                            <h5>Thông tin cá nhân</h5>
+                            <p>Phạm Thị E tập trung vào việc giảng dạy yoga cho trẻ em và người lớn tuổi, giúp họ cải thiện sức khỏe và sự linh hoạt. Cô ấy có hơn 7 năm kinh nghiệm.</p>
+                            <h5>Kinh nghiệm</h5>
+                            <p>Cô ấy đã giảng dạy tại nhiều trung tâm yoga và tổ chức các khóa học đặc biệt cho trẻ em và người lớn tuổi.</p>
+                            <h5>Đánh giá</h5>
+                            <p>⭐⭐⭐⭐⭐ (5/5)</p>
+                            <p>Học viên đánh giá cao khả năng kết nối và sự chăm sóc tận tình của cô ấy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!-- Footer -->
+<footer class="footer bg-dark text-white py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <h5 class="footer-heading">Về Chúng Tôi</h5>
+                <p>Tìm hiểu thêm về câu chuyện của chúng tôi và cách chúng tôi bắt đầu.</p>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h5 class="footer-heading">Liên Kết Nhanh</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="footer-link">Trang Chủ</a></li>
+                    <li><a href="#" class="footer-link">Sản Phẩm</a></li>
+                    <li><a href="#" class="footer-link">Về Chúng Tôi</a></li>
+                    <li><a href="#" class="footer-link">Liên Hệ</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h5 class="footer-heading">Theo Dõi Chúng Tôi</h5>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#" class="footer-link"><i class="bi bi-facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="#" class="footer-link"><i class="bi bi-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="#" class="footer-link"><i class="bi bi-instagram"></i></a></li>
+                    <li class="list-inline-item"><a href="#" class="footer-link"><i class="bi bi-pinterest"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h5 class="footer-heading">Đăng Ký</h5>
+                <form>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Email của bạn" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Đăng Ký</button>
+                </form>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12 text-center">
+                <p class="mb-0 yoga-text">© 2023 Yoga Online. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+</html>

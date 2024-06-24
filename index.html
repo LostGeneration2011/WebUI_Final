@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khóa Học Yoga Trực Tuyến</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khóa Học Yoga Trực Tuyến</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- jQuery -->
+   <!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Yoga Online</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="coursesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Khóa Học
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+                            <li><a class="dropdown-item" href="#courses-basic">Cơ Bản</a></li>
+                            <li><a class="dropdown-item" href="#courses-intermediate">Trung Cấp</a></li>
+                            <li><a class="dropdown-item" href="#courses-advanced">Nâng Cao</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#instructors">Giáo Viên</a>
+                    </li>
+                </ul>
+                <form id="searchForm" class="d-flex me-3">
+                    <input id="searchInput" class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Tìm</button>
+                </form>
+                <a href="#" class="btn btn-outline-light me-2 position-relative" data-bs-toggle="modal" data-bs-target="#cartModal">
+                    <i class="bi bi-cart"></i>
+                    <span id="cartCount" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        0
+                    </span>
+                </a>
+                <a href="#" class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#signupModal">Đăng Ký</a>
+                <a href="#" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#loginModal">Đăng Nhập</a>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- Hero Section with Video Background -->
+    <header class="hero-section">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/TIYsuyUog9I?si=7P7MiZqYzkznx_GX&autoplay=1&mute=1&loop=1&playlist=TIYsuyUog9I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="hero-content text-center text-white">
+            <h1>Chào Mừng Đến Với Khóa Học Yoga Trực Tuyến</h1>
+            <p class="lead">Khám phá những khóa học yoga tốt nhất và bắt đầu hành trình của bạn ngay hôm nay.</p>
+            <a href="#courses" class="btn btn-primary">Xem Khóa Học</a>
+        </div>
+    </header>
+
+<!-- Our Story Section -->
+<section id="our-story" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Câu Chuyện Của Chúng Tôi</h2>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <p class="story-text">Yoga Online được thành lập với sứ mệnh mang lại sức khỏe và sự bình an cho tất cả mọi người thông qua yoga. Chúng tôi tin rằng yoga không chỉ là một hình thức tập luyện, mà còn là một phong cách sống giúp cải thiện sức khỏe thể chất và tinh thần.</p>
+                <p class="story-text">Chúng tôi tự hào mang đến cho bạn những khóa học yoga chất lượng cao, được hướng dẫn bởi các giáo viên giàu kinh nghiệm. Dù bạn là người mới bắt đầu hay đã có kinh nghiệm, chúng tôi đều có những khóa học phù hợp với bạn.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="img/our-story-1.jpg" class="img-fluid story-image" alt="Câu Chuyện Của Chúng Tôi">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Courses Section -->
+<section id="courses" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Khóa Học Yoga</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card course-card">
+                    <img src="img/course-1.jpg" class="card-img-top" alt="Khóa Học 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Yoga Cho Người Mới Bắt Đầu</h5>
+                        <p class="card-text">Bắt đầu hành trình yoga của bạn với khóa học thân thiện cho người mới bắt đầu.</p>
+                        <p class="card-text">Rating: ⭐⭐⭐⭐☆</p>
+                        <p class="card-text">Giá: 500.000 VND</p>
+                        <a href="#" class="btn btn-primary btn-buy-now" data-product-id="1">Mua Ngay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card course-card">
+                    <img src="img/course-2.jpg" class="card-img-top" alt="Khóa Học 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Yoga Trung Cấp</h5>
+                        <p class="card-text">Nâng cao kỹ năng của bạn với khóa học trung cấp.</p>
+                        <p class="card-text">Rating: ⭐⭐⭐⭐⭐</p>
+                        <p class="card-text">Giá: 700.000 VND</p>
+                        <a href="#" class="btn btn-primary btn-buy-now" data-product-id="2">Mua Ngay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card course-card">
+                    <img src="img/course-3.jpg" class="card-img-top" alt="Khóa Học 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Yoga Nâng Cao</h5>
+                        <p class="card-text">Chinh phục các kỹ thuật và tư thế nâng cao với khóa học này.</p>
+                        <p class="card-text">Rating: ⭐⭐⭐⭐☆</p>
+                        <p class="card-text">Giá: 900.000 VND</p>
+                        <a href="#" class="btn btn-primary btn-buy-now" data-product-id="3">Mua Ngay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <a href="all-courses.html" class="btn all-courses-btn">Tất Cả Các Khóa Học</a>
+        </div>
+        
+        
+    </div>
+</section>
+
+
+<!-- Product Modals -->
+<!-- Course Modal 1 -->
+<div class="modal fade" id="courseModal1" tabindex="-1" aria-labelledby="courseModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="courseModalLabel1">Yoga Cho Người Mới Bắt Đầu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="img/course-1.jpg" class="img-fluid mb-3" alt="Khóa Học 1">
+                <p>Bắt đầu hành trình yoga của bạn với khóa học thân thiện cho người mới bắt đầu. Khóa học này bao gồm các bài tập cơ bản và hướng dẫn chi tiết để bạn làm quen với yoga.</p>
+                <p><strong>Rating:</strong> ⭐⭐⭐⭐☆</p>
+                <p><strong>Giá:</strong> 500.000 VND</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-primary" data-product-id="1">Mua Ngay</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Course Modal 2 -->
+<div class="modal fade" id="courseModal2" tabindex="-1" aria-labelledby="courseModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="courseModalLabel2">Yoga Trung Cấp</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="img/course-2.jpg" class="img-fluid mb-3" alt="Khóa Học 2">
+                <p>Nâng cao kỹ năng của bạn với khóa học trung cấp. Khóa học này cung cấp các bài tập và kỹ thuật phức tạp hơn, giúp bạn tiến xa hơn trong hành trình yoga của mình.</p>
+                <p><strong>Rating:</strong> ⭐⭐⭐⭐⭐</p>
+                <p><strong>Giá:</strong> 700.000 VND</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-primary" data-product-id="2">Mua Ngay</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Course Modal 3 -->
+<div class="modal fade" id="courseModal3" tabindex="-1" aria-labelledby="courseModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="courseModalLabel3">Yoga Nâng Cao</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="img/course-3.jpg" class="img-fluid mb-3" alt="Khóa Học 3">
+                <p>Chinh phục các kỹ thuật và tư thế nâng cao với khóa học này. Khóa học dành cho những ai đã có nền tảng yoga vững chắc và muốn thử thách bản thân.</p>
+                <p><strong>Rating:</strong> ⭐⭐⭐⭐☆</p>
+                <p><strong>Giá:</strong> 900.000 VND</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-primary" data-product-id="3" id="">Mua Ngay</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+ <!-- Instructors Section -->
+ <section id="instructors" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Giáo Viên</h2>
+        <div id="instructor-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6 mb-4 text-center">
+                            <div class="card instructor-card">
+                                <img src="img/profile.jpg" class="rounded-circle mb-3 instructor-img" alt="Giáo Viên 1">
+                                <div class="card-body text-center">
+                                    <h5>Nguyễn Thị C</h5>
+                                    <p>Với hơn 10 năm kinh nghiệm, Nguyễn Thị C là chuyên gia yoga được nhiều người yêu mến.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4 text-center">
+                            <div class="card instructor-card">
+                                <img src="img/profile-1.png" class="rounded-circle mb-3 instructor-img" alt="Giáo Viên 2">
+                                <div class="card-body text-center">
+                                    <h5>Trần Văn D</h5>
+                                    <p>Trần Văn D là người hướng dẫn yoga trung cấp và nâng cao, chuyên về các kỹ thuật thở và thiền.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4 text-center">
+                            <div class="card instructor-card">
+                                <img src="img/profile-2.jpg" class="rounded-circle mb-3 instructor-img" alt="Giáo Viên 3">
+                                <div class="card-body text-center">
+                                    <h5>Phạm Thị E</h5>
+                                    <p>Phạm Thị E tập trung vào việc giảng dạy yoga cho trẻ em và người lớn tuổi, giúp họ cải thiện sức khỏe và sự linh hoạt.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6 mb-4 text-center">
+                            <div class="card instructor-card">
+                                <img src="img/profile.jpg" class="rounded-circle mb-3 instructor-img" alt="Giáo Viên 4">
+                                <div class="card-body text-center">
+                                    <h5>Lê Thị F</h5>
+                                    <p>Lê Thị F có kỹ năng đặc biệt trong yoga trị liệu và phục hồi.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4 text-center">
+                            <div class="card instructor-card">
+                                <img src="img/profile-1.png" class="rounded-circle mb-3 instructor-img" alt="Giáo Viên 5">
+                                <div class="card-body text-center">
+                                    <h5>Đỗ Văn G</h5>
+                                    <p>Đỗ Văn G là một huấn luyện viên chuyên nghiệp với các khóa học yoga mạnh mẽ và sáng tạo.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4 text-center">
+                            <div class="card instructor-card">
+                                <img src="img/profile-2.jpg" class="rounded-circle mb-3 instructor-img" alt="Giáo Viên 6">
+                                <div class="card-body text-center">
+                                    <h5>Trịnh Thị H</h5>
+                                    <p>Trịnh Thị H là chuyên gia yoga với nhiều kinh nghiệm trong yoga cho phụ nữ mang thai.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#instructor-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#instructor-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="text-center mt-4">
+            <a href="teachers.html" class="btn btn-primary">Xem Tất Cả Giáo Viên</a>
+        </div>
+    </div>
+</section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Cảm Nhận Học Viên</h2>
+            <div id="testimonial-carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center">
+                            <div class="col-md-8">
+                                <div class="testimonial text-center">
+                                    <p class="lead">"Khóa học yoga này đã thay đổi cuộc sống của tôi. Tôi cảm thấy khỏe mạnh và hạnh phúc hơn bao giờ hết!"</p>
+                                    <h5>- Nguyễn Văn A</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <div class="col-md-8">
+                                <div class="testimonial text-center">
+                                    <p class="lead">"Giáo viên rất tận tâm và nhiệt tình. Tôi đã học được rất nhiều từ khóa học này."</p>
+                                    <h5>- Trần Thị B</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+<section id="blog" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Bài Viết Blog</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card blog-card">
+                    <img src="img/blog-1.jpg" class="card-img-top" alt="Bài Viết 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Những Lí Do Nên Tập Yoga</h5>
+                        <p class="card-text">Nội dung tóm tắt của bài viết 1...</p>
+                        <a href="blog.html" class="btn btn-primary">Đọc Thêm</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card blog-card">
+                    <img src="img/blog-2.jpg" class="card-img-top" alt="Bài Viết 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Yoga là gì? Làm sao thực hành Yoga</h5>
+                        <p class="card-text">Nội dung tóm tắt của bài viết 2...</p>
+                        <a href="blog.html" class="btn btn-primary">Đọc Thêm</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card blog-card">
+                    <img src="img/blog-3.jpg" class="card-img-top" alt="Bài Viết 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Yoga là một lối sống</h5>
+                        <p class="card-text">Nội dung tóm tắt của bài viết 3...</p>
+                        <a href="blog.html" class="btn btn-primary">Đọc Thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Topics Section -->
+<section id="topics" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Thành Tựu</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card achievement-card text-center p-3">
+                    <i class="bi bi-award achievement-icon"></i>
+                    <h5 class="mt-3">Số Lớp</h5>
+                    <p class="achievement-text"><span class="count" data-target="500">0</span> lớp học đã được tổ chức thành công.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card achievement-card text-center p-3">
+                    <i class="bi bi-people achievement-icon"></i>
+                    <h5 class="mt-3">Số Học Viên</h5>
+                    <p class="achievement-text"><span class="count" data-target="10000">0</span> học viên đã tham gia các khóa học của chúng tôi.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card achievement-card text-center p-3">
+                    <i class="bi bi-trophy achievement-icon"></i>
+                    <h5 class="mt-3">Thành Tích</h5>
+                    <p class="achievement-text">Nhận được nhiều giải thưởng và chứng nhận uy tín trong lĩnh vực yoga.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card achievement-card text-center p-3">
+                    <i class="bi bi-stars achievement-icon"></i>
+                    <h5 class="mt-3">Đánh Giá Cao</h5>
+                    <p class="achievement-text"><span class="count" data-target="8000">0</span> học viên đánh giá 5 sao.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card achievement-card text-center p-3">
+                    <i class="bi bi-heart achievement-icon"></i>
+                    <h5 class="mt-3">Cộng Đồng</h5>
+                    <p class="achievement-text">Tạo ra một cộng đồng yoga mạnh mẽ và gắn kết.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card achievement-card text-center p-3">
+                    <i class="bi bi-globe achievement-icon"></i>
+                    <h5 class="mt-3">Phạm Vi Toàn Cầu</h5>
+                    <p class="achievement-text"><span class="count" data-target="20">0</span> quốc gia trên toàn thế giới.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+  
+
+
+<!-- Sign Up Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupModalLabel">Đăng Ký</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="signupForm">
+            <div class="mb-3">
+              <label for="name" class="form-label">Tên</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Đăng Ký</button>
+          </form>
+          <div id="successMessage" class="alert alert-success mt-3 d-none">
+            Bạn đã đăng ký thành công!
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Đăng Nhập</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="loginForm">
+            <div class="mb-3">
+              <label for="loginEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="loginEmail" required>
+            </div>
+            <div class="mb-3">
+              <label for="loginPassword" class="form-label">Mật Khẩu</label>
+              <input type="password" class="form-control" id="loginPassword" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Đăng Nhập</button>
+          </form>
+          <div id="loginSuccessMessage" class="alert alert-success mt-3 d-none">
+            Bạn đã đăng nhập thành công!
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Cart Modal -->
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartModalLabel">Giỏ Hàng</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Sản Phẩm</th>
+                            <th>Số Lượng</th>
+                            <th>Giá</th>
+                            <th>Tổng</th>
+                            <th>Thao Tác</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cartDetails">
+                        <!-- Cart items will be inserted here by JavaScript -->
+                    </tbody>
+                </table>
+                <div class="d-flex justify-content-end">
+                    <h5>Tổng Thành Tiền: <span id="totalAmount">0</span> VND</h5>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-primary" id="checkoutButton">Thanh Toán</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="footer bg-dark text-white py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <h5 class="footer-heading">Về Chúng Tôi</h5>
+                <p>Tìm hiểu thêm về câu chuyện của chúng tôi và cách chúng tôi bắt đầu.</p>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h5 class="footer-heading">Liên Kết Nhanh</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="footer-link">Trang Chủ</a></li>
+                    <li><a href="#" class="footer-link">Sản Phẩm</a></li>
+                    <li><a href="#" class="footer-link">Về Chúng Tôi</a></li>
+                    <li><a href="#" class="footer-link">Liên Hệ</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h5 class="footer-heading">Theo Dõi Chúng Tôi</h5>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#" class="footer-link"><i class="bi bi-facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="#" class="footer-link"><i class="bi bi-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="#" class="footer-link"><i class="bi bi-instagram"></i></a></li>
+                    <li class="list-inline-item"><a href="#" class="footer-link"><i class="bi bi-pinterest"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h5 class="footer-heading">Đăng Ký</h5>
+                <form>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Email của bạn" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Đăng Ký</button>
+                </form>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12 text-center">
+                <p class="mb-0 yoga-text">© 2023 Yoga Online. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+</html>

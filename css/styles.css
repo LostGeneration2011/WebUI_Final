@@ -1,0 +1,907 @@
+/* Reset mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font chữ chung */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+    color: #ffc107; /* Yellow color */
+    font-weight: bold; /* Bold font */
+    text-transform: uppercase; /* Uppercase text */
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.75rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+h6 {
+    font-size: 1.25rem;
+}
+
+/* Paragraph Styles */
+p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Header */
+.navbar {
+    background-color: #333;
+}
+
+.navbar-brand, .nav-link {
+    color: #fff !important;
+    transition: color 0.3s;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: #f9c74f !important;
+}
+
+.dropdown-menu {
+    background-color: #444;
+}
+
+.dropdown-item {
+    color: #fff !important;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-item:hover {
+    background-color: #f9c74f;
+    color: #333 !important;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content h1 {
+    color: #f9c74f;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+}
+
+.btn-primary {
+    background-color: #f9c74f;
+    border-color: #f9c74f;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Courses Section */
+#courses {
+    background-color: #f9f9f9; /* Màu nền xám nhạt */
+    border-top: 5px solid #ff6347; /* Đường viền trên màu đỏ cam */
+    padding: 50px 0;
+}
+
+#courses h2 {
+    font-size: 3rem; /* Tăng kích thước chữ */
+    font-weight: 700; /* Đậm hơn */
+    color: #ff6347; /* Màu chữ đỏ cam */
+    text-align: center; /* Căn giữa */
+    margin-bottom: 40px;
+    position: relative; /* Để có thể sử dụng ::after */
+    text-transform: uppercase; /* Chữ in hoa */
+    letter-spacing: 2px; /* Khoảng cách giữa các chữ cái */
+}
+
+#courses h2::after {
+    content: '';
+    position: absolute;
+    width: 50px; /* Độ dài của gạch dưới */
+    height: 5px; /* Độ dày của gạch dưới */
+    background-color: #ff6347; /* Cùng màu với chữ */
+    bottom: -10px; /* Khoảng cách với chữ */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.course-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.course-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.course-card:hover img {
+    transform: scale(1.05);
+}
+
+.course-card .card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.course-card .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.course-card:hover .card-title {
+    color: #f9a826;
+}
+
+.course-card .card-text {
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.course-card .btn-primary {
+    background-color: #f9c74f;
+    border-color: #f9c74f;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.course-card .btn-primary:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* About Section */
+#about {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    border-top: 5px solid #f9c74f;
+    border-bottom: 5px solid #f9c74f;
+}
+
+#about p {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+#about img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+#about .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#about .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    #about .col-lg-6 {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    #about img {
+        margin-top: 50px;
+    }
+}
+
+/* Instructors Section */
+#instructors {
+    background-color: #e6f7ff; /* Màu nền xanh nhạt */
+    border-top: 5px solid #17a2b8; /* Đường viền trên màu xanh dương */
+    padding: 60px 0;
+}
+
+#instructors .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#instructors .col-lg-4,
+#instructors .col-md-6,
+#instructors .col-sm-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px; /* Khoảng cách giữa các thẻ */
+}
+
+#instructors .card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #fff;
+    position: relative;
+    padding-top: 75px; /* Thêm khoảng trống để hình ảnh không bị cắt */
+}
+
+#instructors .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+#instructors .rounded-circle {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border: 5px solid #f9c74f;
+    transition: transform 0.3s, border-color 0.3s;
+    position: absolute;
+    top: 10px; /* Đặt hình ảnh tròn lên trên thẻ card */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#instructors .rounded-circle:hover {
+    transform: translate(-50%, -10%) scale(1.1);
+    border-color: #fff;
+}
+
+#instructors .card-body {
+    padding: 20px;
+    padding-top: 75px; /* Thêm khoảng trống cho hình ảnh nâng lên */
+}
+
+#instructors h5 {
+    margin-top: 15px;
+    font-size: 1.25rem;
+    color: #333;
+}
+
+#instructors p {
+    color: #666;
+    text-align: center;
+    margin-bottom: 0; /* Loại bỏ khoảng cách dưới */
+}
+#instructors h2 {
+    color: #17a2b8; /* Màu chữ xanh dương */
+}
+
+
+/* Testimonials Section */
+#testimonials {
+    background-color: #fff; /* Màu nền trắng */
+    border-top: 5px solid #ffc107; /* Đường viền trên màu vàng */
+    padding: 50px 0;
+}
+#testimonials h2 {
+    color: #ffc107; /* Màu chữ vàng */
+}
+#testimonials .testimonial {
+    padding: 20px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#testimonials .testimonial p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+#testimonials .testimonial h5 {
+    color: #333;
+}
+
+/* Contact Section */
+#contact .form-control {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s;
+}
+
+#contact .form-control:focus {
+    border-color: #f9c74f;
+    box-shadow: none;
+}
+
+#contact button {
+    background-color: #f9c74f;
+    border-color: #f9c74f;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#contact button:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+}
+
+.footer-heading {
+    color: #f9c74f;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: #f9c74f;
+}
+
+.list-inline-item {
+    margin-right: 10px;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #666;
+}
+
+.form-control:focus {
+    border-color: #f9c74f;
+    box-shadow: none;
+}
+
+.btn-primary {
+    background-color: #f9c74f;
+    border-color: #f9c74f;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Yoga Text Effect */
+.yoga-text {
+    font-family: 'Sacramento', cursive; /* Chọn font chữ viết tay */
+    font-size: 1.5rem; /* Kích thước chữ */
+    color: #f9c74f; /* Màu chữ vàng nhạt */
+    margin-top: 1rem; /* Khoảng cách trên */
+    position: relative; /* Để có thể sử dụng ::after */
+}
+
+.yoga-text::after {
+    content: ''; /* Nội dung thêm */
+    position: absolute; /* Vị trí */
+    left: 0;
+    bottom: -5px; /* Khoảng cách với chữ */
+    width: 100%;
+    height: 2px; /* Độ dài gạch chân */
+    background-color: #f9c74f; /* Màu gạch chân */
+}
+
+/* Blog Section */
+#blog {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.blog-card {
+    position: relative;
+    margin-bottom: 30px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.blog-card .card-body {
+    padding: 20px;
+}
+
+.blog-card .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    transition: color 0.3s; /* Hiệu ứng màu chữ */
+}
+
+.blog-card .card-title:hover {
+    color: #f9a826; /* Màu vàng nhạt khi hover */
+}
+
+.blog-card .card-text {
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif; /* Sử dụng cùng font chữ */
+}
+
+.blog-card .btn-primary {
+    background-color: #f9c74f;
+    border-color: #f9c74f;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.blog-card .btn-primary:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+
+
+/* Our Story Section */
+#our-story {
+    background: url('../img/our-story.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 60px 0;
+    color: #333;
+    position: relative;
+}
+
+#our-story h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.story-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, color 0.3s;
+}
+
+.story-text:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
+.story-image {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.story-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    #our-story .row {
+        flex-direction: column;
+    }
+
+    .story-text {
+        margin-bottom: 20px;
+    }
+
+    .story-image {
+        margin-top: 20px;
+    }
+}
+
+/* Topics Section */
+#topics {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.topic-card {
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.topic-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #e6f7ff;
+}
+
+.topic-card i {
+    font-size: 3rem;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.topic-card:hover i {
+    color: #0056b3;
+}
+
+.topic-card h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #333;
+    margin-top: 15px;
+    transition: color 0.3s ease;
+}
+
+.topic-card:hover h5 {
+    color: #0056b3;
+}
+
+#topics h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#topics h2::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 5px;
+    background-color: #007bff;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Custom styles for the modals */
+#signupModal .modal-header,
+#loginModal .modal-header {
+    border-bottom: none;
+}
+
+#signupModal .modal-footer,
+#loginModal .modal-footer {
+    border-top: none;
+}
+
+/* Custom styles for the course modals */
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+.modal-body img {
+    border-radius: 5px;
+}
+
+/* Highlight Animation */
+.highlight {
+    animation: highlight 1s ease-in-out;
+}
+
+@keyframes highlight {
+    0% { background-color: yellow; }
+    100% { background-color: transparent; }
+}
+
+/* Blog Content Section */
+#blog-content {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+#blog-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#blog-content h2::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 5px;
+    background-color: #007bff;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.blog-card {
+    position: relative;
+    margin-bottom: 30px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.blog-card .card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.blog-card .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    transition: color 0.3s; /* Hiệu ứng màu chữ */
+}
+
+.blog-card .card-title:hover {
+    color: #f9a826; /* Màu vàng nhạt khi hover */
+}
+
+.blog-card .card-text {
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif; /* Sử dụng cùng font chữ */
+}
+
+.blog-card .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.blog-card .btn-primary:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+
+/* All Courses Button */
+.all-courses-btn {
+    background-color: #ff6347; /* Màu nền phù hợp với h2 của courses section */
+    border: none; /* Bỏ viền */
+    color: white; /* Màu chữ */
+    padding: 10px 20px; /* Khoảng cách bên trong */
+    text-align: center; /* Canh giữa chữ */
+    text-decoration: none; /* Bỏ gạch chân */
+    display: inline-block; /* Hiển thị dưới dạng khối nội tuyến */
+    font-size: 1.25rem; /* Cỡ chữ */
+    margin: 10px 2px; /* Khoảng cách bên ngoài */
+    cursor: pointer; /* Con trỏ chuột khi hover */
+    border-radius: 5px; /* Bo góc */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Hiệu ứng chuyển đổi màu nền và màu chữ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+}
+
+.all-courses-btn:hover {
+    background-color: #e5533d; /* Màu nền khi hover */
+    color: #fff; /* Màu chữ khi hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Đổ bóng khi hover */
+}
+
+
+
+/* CSS for the Achievement Section */
+.achievement-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    padding: 1.5rem;
+}
+
+.achievement-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.achievement-icon {
+    font-size: 2.5rem;
+    color: #007bff;
+}
+
+.achievement-text {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #555;
+}
+
+.count {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #007bff;
+    display: inline-block; /* Đảm bảo rằng nó hiển thị inline với đoạn văn */
+    visibility: visible; /* Đảm bảo phần tử không bị ẩn */
+}
+
+
+.achievement-card h5 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #333;
+}
+
+/*Giáo Viên/
+/* Instructors Section (Teachers Page) */
+body.teachers-page {
+    background-color: #f8f9fa; /* Màu nền chung cho trang */
+}
+
+#teachers {
+    background: linear-gradient(to right, #f8f9fa, #e0e7ff);
+    padding: 5rem 0;
+}
+
+.teachers-page .instructor-card {
+    background-color: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    padding-top: 75px;
+    text-align: center;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.teachers-page .instructor-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.teachers-page .instructor-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #f8f9fa;
+    margin-top: -75px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.teachers-page .card-body h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 85px; /* Điều chỉnh để vừa với hình ảnh */
+}
+
+.teachers-page .card-body p {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.teachers-page .card-body {
+    padding: 20px;
+    background: linear-gradient(to bottom right, #ffffff, #f8f9fa);
+}
+
+.teachers-page .card-body::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    z-index: -1;
+    transition: background 0.3s;
+}
+
+.teachers-page .instructor-card:hover .card-body::before {
+    background: rgba(255, 255, 255, 0.8);
+}
